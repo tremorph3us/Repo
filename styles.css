@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+/* Globally apply border-box model */ 
+body {
+    width: 1024px;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size: 14px;
+    color: #333333;
+}
+/* apply window size and font specifcation to all items within body */
+
+td {
+    width: 33%;
+    padding: 15px;
+    vertical-align: bottom;
+}
+/* make table cells 1/3 of the size of the table (as we will use 3 columns and 2 rows to display 6 images, 1 per cell, vertically aligned to the bottom of each cell, which keeps them inline despite variable image aspect ratios */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+/* These a: settings allow links to underline only when hovering over or clicked, as text-decoration: none; suppresses the usual hyperlink underlining when not being activated */
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-top: 2px;
+	margin-bottom: 1px;
+}
+/* reduces the spacing between multiple sizes of Headline tags to comply with styleguide */
+
+.navigation {
+    background: #333333;
+    font-size: 120%;
+    color: #fefefe;
+    width: 100%;
+    border-bottom: 3px solid red;
+}
+/* sets the navigation bar style to comply with the styleguide specifications */
+#content {
+    width: 1024px;
+}
+/* sets the width of the main content (image table and news column) to be 1024px wide as per styleguide specifications */ 
+
+#left {
+    width: 75%;
+    margin: 5px;
+    padding: 1em;
+    background: white;
+    float: left;
+}
+/* allows the left section containing the image table to take 3/4 of the avaialable width and float on the left of the display */
+#right {
+    width: 23%;
+    margin: 5px;
+    padding: 1em;
+    background: white;
+    float: right;
+}
+/* allows the right section containing the news feed to take 1/4 of the avaialable width and float on the right of the display, alongside image table instead of below.  2% reduction is to allow for padding to avoid it being pushed below the image table */
