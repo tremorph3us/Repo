@@ -11,11 +11,25 @@
   
   /* Style the header */
   .header {
+    float: left;
     background-color: #f1f1f1;
-    padding: 20px;
+    margin: 20;
+    padding: 20;
+    height: 100px;
     text-align: center;
   }
-  
+
+    /* side header */
+    .header.side {
+        width: 25%;
+        text-align: right;
+    }
+      
+      /* Main header */
+      .header.main {
+        width: 50%;
+      }
+   
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
@@ -47,7 +61,7 @@
     width: 25%;
   }
   
-  /* Middle column */
+  /* Main column */
   .column.main {
     width: 75%;
   }
@@ -55,6 +69,13 @@
   
   /* Clear floats after the columns */
   .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+   /* Clear floats after the columns */
+   .header::after {
     content: "";
     display: table;
     clear: both;
