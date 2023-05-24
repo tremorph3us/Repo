@@ -30,14 +30,19 @@ jbloggs@ou.ac.uk<br>
 <div class="row">
   <div class="column side">
     <hr>
-    <input type="text" name="example" list="modeselect">
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <input type="text" name="modeselect" list="modeselect">
+        <input type="hidden" id="custId" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
     <datalist id="modeselect">
-        <option value="Announcements" selected>    
-        <option value="Walking Events">  
-        <option value="Other Events">
-        <option value="Memberships">
-        <option value="News Articles">
+        <option selected> Announcements    
+        <option> Walking Events  
+        <option> Other Events
+        <option> Memberships
+        <option> News Articles
     </datalist>
+        <input type="submit" value="Add" name="Action">
+        <input type="submit" value="Edit" name="Action">
+    </form>
     <hr>
 </div>
   
