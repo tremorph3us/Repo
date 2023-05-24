@@ -29,6 +29,12 @@ jbloggs@ou.ac.uk<br>
 
 <div class="row">
   <div class="column side">
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <input type="text" name="searchterm" value="">
+        <input type="hidden" id="custId" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
+        <input type="submit" value="Search" name="Action">
+    </form>
+
     <hr>
     <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
         <input type="text" name="modeselect" list="modeselect">
@@ -47,9 +53,35 @@ jbloggs@ou.ac.uk<br>
 </div>
   
   <div class="column main">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-  </div>
+    <p><a href="home.html">Home</a>&nbsp&gt;&nbsp<a href="announce.html">Announcements</a>&nbsp&gt;&nbspAdd&nbsp&gt;&nbspANN001</p>
+    <h2>Add Announcements</h2>
+    <hr>
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <input type="hidden" id="custId" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
+    
+    <table>
+        <tr>
+            <th style="width:"25%>Entry Date:</th>
+            <th style="width:"25%>&lt;Today&gt;</th>
+            <th style="width:"25%>Attachment:&lt;NONE&gt;</th>
+            <th style="width:"25%>Ref:ANN001</th>
+        </tr>
+        <tr>
+            <td style="width:"25%><label for="senddate">Send Date:</label></td>
+            <td style="width:"25%><input type="date" id="senddate" name="senddate"></td>
+            <td style="width:"25%><input type="file" id="attachment" name="attachment"></td>
+            <td style="width:"25%><input type="submit" value="Upload" name="Action"></td>
+        </tr>
+            <td style="width:"25%>Sender/Owner:</td>
+            <td style="width:"25%>jbloggs@ou.ac.uk</td>
+            <td style="width:"25%>Name: Joe Bloggs</td>
+            <td style="width:"25%><input type="checkbox" id="sendfromDL" name="sendfromDL" value="Yes" checked>
+            <label for="sendfromDL">Send as announcements@walking.ou.ac.uk</label></td>
+        </tr>
+    </form>
+    </table>
+    <hr>
+<div>
 
 </body>
 </html>
