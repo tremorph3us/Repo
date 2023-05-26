@@ -19,6 +19,21 @@
     text-align: center;
   }
 
+  th {
+    width: 25%;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
+/* make table cells 1/4 of the size of the table*/
+
+  td {
+    width: 25%;
+    padding: 5px;
+    vertical-align: bottom;
+}
+/* make table cells 1/4 of the size of the table*/
+
     /* side header */
     .header.side {
         width: 25%;
