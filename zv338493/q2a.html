@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>OU Walking Club</title>
+        <link rel="stylesheet" href="q2a.css">
+        <meta name="author" content="J5396827">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">--> 
+    </head>
+    <!-- end of Header specification -->
+</head>
+<body>
+
+<div class="header side">
+    <img class="left "src="images\OUlogo.png">
+</div>
+
+<div class="header main">
+    <h1>OU Walking Club</h1>
+    <h3>Website Administration</h3>
+</div>
+
+<div class="header side">
+jbloggs@ou.ac.uk<br>
+<a href="logoff.html">Logoff</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <hr>
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <input type="text" name="searchterm" value="">
+        <input type="hidden" id="custId" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
+        <input type="submit" value="Search" name="Action">
+    </form>
+
+    <hr>
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <input type="hidden" id="custId" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
+    <select name="modeselect">
+        <option selected> Announcements    
+        <option> Walking Events  
+        <option> Other Events
+        <option> Memberships
+        <option> News Articles
+    </select>
+        <input type="submit" value="Add" name="Action">
+        <input type="submit" value="Edit" name="Action">
+    </form>
+    <hr>
+</div>
+  
+  <div class="column main">
+    <p><a href="home.html">Home</a>&nbsp&gt;&nbsp<a href="announce.html">Announcements</a>&nbsp&gt;&nbspAdd&nbsp&gt;&nbspANN001</p>
+    <h2>Add Announcement</h2>
+    <hr>
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <input type="hidden" id="custId" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
+    
+    <table>
+        <tr>
+            <th>Entry Date:</th>
+            <th>&lt;Today&gt;</th>
+            <th>Attachment</th>
+            <th>Ref:ANN001</th>
+        </tr>
+        <tr>
+            <td><label for="senddate">Send Date:</label></td>
+            <td><input type="date" id="senddate" name="senddate"></td>
+            <td><input type="file" id="attachment" name="attachment"></td>
+            </tr>
+            <td>Sender/Owner:</td>
+            <td>jbloggs@ou.ac.uk</td>
+            <td>Name: Joe Bloggs</td>
+            <td>
+                <label for="anonymous">anonymous</label>
+                <input type="checkbox" id="anonymous" name="anonymous" value="Yes" checked>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="subject">Subject:</label></td>
+            <td colspan="2"><input type="text" id="subject" name="subject"></td>
+        </tr>
+        <tr>
+            <td><label for="announcement">Announcement text:</label></td>
+            <td colspan="2"><textarea id="announcement" name="announcement" rows="8" cols="60"></textarea></td>
+            <td><input type="submit" value="Save Draft" name="Action"><br>
+            <input type="submit" value="Send Now" name="Action"><br>
+            <input type="submit" value="Cancel" name="Action"></td>
+
+        </tr>
+    </form>
+    </table>
+    <hr>
+<div>
+
+</body>
+</html>
