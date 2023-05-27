@@ -30,6 +30,15 @@
     resize: none;
   }
 
+  input {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+
   table {
     width: 20%;
     padding: 5px;
@@ -63,28 +72,6 @@
         width: 50%;
       }
    
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
   .column {
     float: left;
   }
@@ -92,6 +79,8 @@
   /* Left  column */
   .column.side {
     width: 25%;
+    text-align: 5%;
+    padding: 5;
   }
   
   /* Main column */
