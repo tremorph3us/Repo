@@ -11,11 +11,11 @@ body {
 /* apply window size and font specifcation to all items within body */
 
 td {
-    width: 33%;
+    width: 25%;
     padding: 15px;
     vertical-align: bottom;
 }
-/* make table cells 1/3 of the size of the table (as we will use 3 columns and 2 rows to display 6 images, 1 per cell, vertically aligned to the bottom of each cell, which keeps them inline despite variable image aspect ratios */
+/* make table cells 1/4 of the size of the table (as we will use 3 columns and 2 rows to display 6 images, 1 per cell, vertically aligned to the bottom of each cell, which keeps them inline despite variable image aspect ratios */
 
 a:link {
     text-decoration: none;
