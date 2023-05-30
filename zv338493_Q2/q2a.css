@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 1024px;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+  
+  /* Style the header */
+  .header {
+    float: left;
+    background-color: #f1f1f1;
+    margin: 20;
+    padding: 20;
+    height: 100px;
+    text-align: center;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+  input {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+
+  table {
+    width: 20%;
+    padding: 5px;
+}
+
+
+  th {
+    text-align: left;
+    width: 25%;
+    padding: 5px;
+    vertical-align: top;
+}
+
+/* make table cells 1/4 of the size of the table*/
+
+  td {
+    width: 25%;
+    padding: 5px;
+    vertical-align: top;
+}
+/* make table cells 1/4 of the size of the table*/
+
+    /* side header */
+    .header.side {
+        width: 25%;
+        text-align: right;
+    }
+      
+      /* Main header */
+      .header.main {
+        width: 50%;
+      }
+   
+  .column {
+    float: left;
+  }
+  
+  /* Left  column */
+  .column.side {
+    width: 25%;
+    text-align: 5%;
+    padding: 5;
+  }
+  
+  /* Main column */
+  .column.main {
+    width: 75%;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+   /* Clear floats after the columns */
+   .header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
